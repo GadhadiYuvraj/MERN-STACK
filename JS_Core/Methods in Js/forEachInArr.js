@@ -18,3 +18,11 @@ citys.forEach((eachCity, idx, arra) => {
     console.log(eachCity.toUpperCase(), idx, arra);
     
 })
+
+// forEach()
+// → runs a function for each element
+// → does NOT create/return a new array from the callback results
+
+// map()
+// → runs a function for each element
+// → creates and returns a NEW array containing the returned values

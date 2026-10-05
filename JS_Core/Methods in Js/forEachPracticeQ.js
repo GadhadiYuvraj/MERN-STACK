@@ -13,3 +13,11 @@ let calSquare = (num) => {
 }
 
 arr.forEach(calSquare)
+
+// forEach()
+// → runs a function for each element
+// → does NOT create/return a new array from the callback results
+
+// map()
+// → runs a function for each element
+// → creates and returns a NEW array containing the returned values
