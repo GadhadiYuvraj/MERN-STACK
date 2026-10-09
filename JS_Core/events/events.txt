@@ -1,0 +1,45 @@
+========================================
+              EVENTS IN JAVASCRIPT
+========================================
+
+
+1. DEFINITION
+
+An event in JavaScript is an action that happens on a webpage, such as clicking a button, typing on a keyboard, hovering over an element, or submitting a form.
+Events are Fired to notify code of "interesting changes" that may affect code execution 
+
+
+2. TYPES OF EVENTS
+
+1) Mouse Events
+   click, dblclick, mouseover, mouseout
+
+2) Keyboard Events
+   keydown, keyup, keypress
+
+3) Form Events
+   submit, change, input, focus, blur
+
+4) Other Events
+   load, resize, print
+
+
+agar hum koi form yea koi login form fill krke ke baad ek button press krte hai tab us button par press krne ko even kehte hai 
+and kisi chiz par hover krna yea click krna yea kisi bhi chiz ko trigger krne ko event kehte hai 
+
+
+
+3. BASIC SYNTAX
+
+element.addEventListener("eventName", function() {
+    // Code to execute when the event occurs
+});
+
+
+5. EXAMPLE
+
+let button = document.querySelector("button");
+
+button.addEventListener("click", () => {
+    console.log("Button clicked!");
+});
