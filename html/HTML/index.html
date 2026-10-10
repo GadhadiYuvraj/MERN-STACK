@@ -3,6 +3,7 @@
   <head>
     <title>html revision</title>
   </head>
+
   <body>
     <header>
       <h3>Navigatio Logo</h3>
@@ -53,7 +54,9 @@
 
       <a href="https://www.google.com" target="_main"
         ><img
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHQtQ5Y--SydsE4u9gKuObJ7Cohi9Be0BIBy4w7lhd5Q&s=10" width="30"/></a><br>
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHQtQ5Y--SydsE4u9gKuObJ7Cohi9Be0BIBy4w7lhd5Q&s=10"
+          width="30" /></a
+      ><br />
       <a href="https://in.pinterest.com/">Pinterest</a>
       <!-- absolute link-->
 
@@ -86,12 +89,94 @@
   This wont ignore spaces and keep 
   the fomat as you written
   on code 
-</pre
-      >
+      </pre>
 
       <hr />
-    </main>
+      <span style="color: blueviolet"
+        >Span Tag only take width as per size and its an inline element
+      </span>
 
+      <hr />
+      <img
+        src="..\images\listOfInlineTag.png"
+        alt="Inline Tag List"
+        height="290"
+      />
+      <hr />
+
+      <h3>Ordered and Unordered List</h3>
+      <ol>
+        <li>Apple</li>
+        <ul>
+          <li>Color : Red</li>
+          <li>Season : Winter</li>
+        </ul>
+        <li>Mango</li>
+        <ul>
+          <li>Color : Yellow</li>
+          <li>Season : Sumer</li>
+        </ul>
+        <li>Tangerines</li>
+      </ol>
+      <hr />
+      <h3>Table</h3>
+      <table border="1">
+        <thead>
+          <caption>
+            Studen Roll No
+          </caption>
+          <tr>
+            <th colspan="2">Information</th>
+          </tr>
+          <tr>
+            <th>Roll No</th>
+            <th>Name</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>001</td>
+            <td>Yuvraj</td>
+          </tr>
+          <tr>
+            <td>002</td>
+            <td>Rajesh</td>
+          </tr>
+          <tr>
+            <td>003</td>
+            <td>Kiran</td>
+          </tr>
+          <tr>
+            <td>004</td>
+            <td>Vicky</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <hr />
+
+      <div>
+        <h2>Form</h2>
+        <p>Form are used to collect data from user</p>
+        <form action="/action.js">
+          <input type="text" placeholder="Full Name" id="name" /><br />
+          <input type="password" placeholder="Password" id="pass" /><br />
+          <label for="id1">
+            <input type="radio" value="10th" name="class" id="id1" />
+            10th </label
+          ><br />
+          <label for="id2">
+            <input type="radio" value="12th" name="class" id="id2" /> 12th
+          </label>
+        </form>
+      </div>
+      <hr />
+      <div>
+        <h2>Class and ID</h2>
+        <p></p>
+      </div>
+    </main>
+    <hr />
     <footer>
       <ul>
         <li><a href="./education.html">Education</a></li>
