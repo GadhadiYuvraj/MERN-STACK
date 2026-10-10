@@ -1,0 +1,36 @@
+CSS (Cascading Style Sheets)
+
+CSS is used to style and design web pages.
+
+Ways of Adding CSS to a Webpage:
+
+1) Inline CSS
+   - CSS is written directly inside an HTML tag using the "style" attribute.
+
+2) Internal CSS
+   - CSS is written inside a <style> tag within the <head> section of an HTML document.
+
+3) External CSS
+   - CSS is written in a separate .css file and linked to the HTML file using the <link> tag.
+
+
+syntax
+
+   <!-- Inline CSS -->
+    <h1 style="color: red;">Hello</h1>
+
+    <!-- Internal CSS: put inside <head> -->
+    <style>
+    p {
+        color: blue;
+    }
+    </style>
+
+    <!-- External CSS: put inside <head> -->
+    <link rel="stylesheet" href="style.css">
+
+========================
+Selectors
+========================
+
+
