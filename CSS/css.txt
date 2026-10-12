@@ -32,5 +32,73 @@ syntax
 ========================
 Selectors
 ========================
+Selector	Symbol / example
 
+ Universal     ||  *
+ Element       ||  p
+ ID            ||  #id
+ Class         ||  .class
+ Grouping      ||  h1,p
+ Descendant    ||  div p
+ Child         ||  div > p
+ Attribute     ||  [type="text"]
+ Pseudo-class  ||  :hover
+ Pseudo-element||  ::first-letter
 
+========================
+Property
+========================
+A CSS Property is an attribute that specifies 
+which aspect of an HTML element you want to style or change,
+such as its color, size, font or background.
+
+========================
+CSS RULE
+========================
+Selector --> Property --> Value 
+   p tag    -->  Color   --> #ffa088 (Pastel Coral)
+
+- Selector: Which element?
+- Property: What do I want to change?
+- Value: What should I change it to?
+
+========================
+CSS COLOR Property
+========================
+
+4 ways to write color
+
+1) Color Names
+
+- Use predefined color names.
+- Examples: white, black, red, green.
+
+2) HEX (Hexadecimal)
+
+- Uses hexadecimal values to represent colors.
+- Examples: #ffffff (white), #000000 (black), #808080 (gray).
+- Useful for specifying precise colors.
+
+3) RGB / RGBA
+
+- RGB stands for Red, Green, Blue.
+- Each color value ranges from 0 to 255.
+- Examples: rgb(255, 0, 0) (red), rgb(175, 236, 190).
+- RGBA adds an alpha value for transparency.
+- Example: rgba(255, 0, 0, 0.3) (red with 30% opacity).
+
+4) HSL / HSLA
+
+- HSL stands for Hue, Saturation, Lightness.
+- Hue represents the color, saturation its intensity, and lightness how light or dark it is.
+- Example: hsl(120, 100%, 50%) (green).
+- HSLA adds an alpha value for transparency.
+
+========================
+CSS Text Property
+========================
+
+Text Styling:
+
+1) font-family:
+-> 
