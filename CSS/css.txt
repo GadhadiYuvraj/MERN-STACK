@@ -95,10 +95,38 @@ CSS COLOR Property
 - HSLA adds an alpha value for transparency.
 
 ========================
-CSS Text Property
+CSS FONT PROPERTIES
 ========================
 
-Text Styling:
+-->CSS font properties control the appearance of text, including its typeface, size, thickness, and styling
 
-1) font-family:
--> 
+1) font-family 
+- Specifies which typeface is used for text.
+- Examples: Arial, Verdana, Times New Roman.
+- Multiple fonts can be provided as fallbacks.
+
+**2. `font-size`**
+- Controls the size of the text.
+- Common units: `px`, `em`, `rem`, `%`.
+- Example value: `16px`.
+
+**3. `font-weight`**
+- Controls the thickness or boldness of text.
+- Common values: `normal`, `bold`, `100`–`900`.
+- Example value: `700`.
+
+**4. `font-style`**
+- Controls whether text is normal, italic, or oblique.
+- Common values: `normal`, `italic`, `oblique`.
+
+**5. `font-variant`**
+- Controls certain font variations, commonly small capitals.
+- Common value: `small-caps`.
+
+**6. `line-height`**
+- Controls the height of each line of text, affecting the spacing between lines.
+- Common values: `1.5`, `24px`.
+
+**7. `font` (shorthand property)**
+- Allows multiple font settings to be specified in one declaration.
+- Can combine font style, weight, size, line height, and family in a single rule.
