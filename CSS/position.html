@@ -1,23 +1,82 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1.0" />
-		<title>position</title>
-	</head>
-	<body>
-		<h1>position</h1>
 
-        <p>
-            <ol>
-                <li> Static (Default)</li>
-                <li>Relative  (Move)</li>
-                <li>Absolute (in a box or in a element we can move it there )</li>
-                <li>Fixed (it keeps element fixed on the page and even with Scrool position does not change)</li>
-                <li>Sticky</li>
-            </ol>
-        </p>
-	</body>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>position</title>
+    <style>
+        body{
+            height: 1500px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .box-static{
+            background-color: lightblue;
+            position: static;
+            
+        }
+         
+        .box-relative{
+            background-color: lightcoral;
+            position: relative;
+            top: 20px;
+            left: 30px;
+            
+        }
+
+        .parent{
+            background: #eee;
+            width: 300px;
+            height:200px;
+            position: relative;
+            margin: 30px;
+        }
+
+        .box-absolute{
+            background-color: lightgreen;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            
+        }
+
+        .sticky{
+            
+        }
+
+        .fixed{
+            
+        }
+
+
+        
+    </style>
+</head>
+
+<body>
+    <h1>position</h1>
+
+    <p>
+    <ol>
+        <li> Static (Default)</li>
+        <li>Relative (Move)</li>
+        <li>Absolute (in a box or in a element we can move it there )</li>
+        <li>Fixed (it keeps element fixed on the page and even with Scrool position does not change)</li>
+        <li>Sticky (It will move with scroll but stick onces stop scrolling )</li>
+    </ol>
+    </p>
+    <hr>
+
+    <div class="box-static"> Stati</div>
+    <div class="box-relative">Relative</div>
+<div class="parent">
+    
+    <div class="box-absolute">Absolute</div>
+    
+</div>
+    <div class="sticky">Sticky</div>
+    <div class="fixed">Fixed</div>
+</body>
+
 </html>
