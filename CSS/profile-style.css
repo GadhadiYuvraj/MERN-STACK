@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    padding: 0;
+    margin: 0;
+}
+
+.sticky-header{
+    position: sticky;
+    top: 0;
+    background-color: #b1b2fc;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    border-bottom: 4px solid #7375e7;
+    z-index: 100;
+
+}
+
+.profile-card{
+    
+}
