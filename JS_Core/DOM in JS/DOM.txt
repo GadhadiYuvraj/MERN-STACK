@@ -1,0 +1,11 @@
+DOM Manipulation 
+Selectors in JS DOM
+
+1) Selecting with ID
+--> document.getElementById("myID")
+
+2) Selecting with Class
+--> document.getElementsByClassName("MyClass")
+--> its simlar to array but not an array 
+3) Selecting with Tag
+--> document.getElementsByTagName("p")
