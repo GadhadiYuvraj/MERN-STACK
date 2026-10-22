@@ -9,3 +9,10 @@ Selectors in JS DOM
 --> its simlar to array but not an array 
 3) Selecting with Tag
 --> document.getElementsByTagName("p")
+
+4) Query Selector 
+4.1) document.querySelector("myId / myClass/ tag")
+// return first element
+
+4.2)document.querySelectorAll("myId/myClass/tag")
+//returns a NodeList
