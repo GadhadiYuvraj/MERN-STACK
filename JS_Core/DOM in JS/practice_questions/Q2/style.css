@@ -1,0 +1,13 @@
+.content {
+	color: red;
+	font-size: 28px;
+	font-family:
+		"Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+		"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.newClass {
+	font-weight: bold;
+	font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    background-color: beige;
+}
