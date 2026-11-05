@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<style>
+			body {
+				display: grid;
+				place-items: center;
+			}
+			.boxDiv {
+				margin: 20px;
+				padding: 20px;
+				width: 390px;
+				height: auto;
+				border: 1px solid black;
+				border-radius: 10px;
+				background-color: beige;
+				color: rgb(99, 9, 9);
+			}
+
+			.flex-container {
+				display: flex; /* Aligns the children side by side */
+				gap: 20px; /* Adds space between the two divs */
+			}
+
+			.box-1,
+			.box-2 {
+				flex: 1; /* Gives both divs an equal width */
+				margin: 20px;
+				padding: 20px;
+				border: 1px solid black;
+				border-radius: 10px;
+				background-color: rgb(250, 224, 152);
+				color: rgb(22, 9, 99);
+			}
+
+			#btn-both {
+				margin: 5px;
+				padding: 20px;
+				width: auto;
+				height: auto;
+				border: 1px solid black;
+				border-radius: 10px;
+				background-color: rgb(85, 100, 236);
+				color: rgb(29, 255, 255);
+			}
+		</style>
+		<title>Events</title>
+	</head>
+	<body>
+		<main class="flex-container">
+			<section class="box-1">
+				<div>
+					<h1>Events in JS</h1>
+					<p>The Change in the state of an object is known as an Event</p>
+					<p>
+						Events are Fired to notify code of "intersting changes" that may
+						affect code execution.
+					</p>
+					<ul>
+						<li>Mouse Events (Click, double click etc..)</li>
+						<li>Keyboard events (keypress, keyup, keydown, etc..)</li>
+						<li>Form events (submit)</li>
+						<li>Print events & many more</li>
+					</ul>
+				</div>
+			</section>
+
+			<section class="box-2">
+				<div>
+					<h1>Event Object</h1>
+					<p>
+						Events Objects are the special objects that has details abouot the
+						event
+					</p>
+					<p>
+						All Event handalers have access to the event object's properties and
+						methods.
+					</p>
+					<pre>node.event = (e) =>{ <br>//handle here<br>}
+					</pre>
+				</div>
+			</section>
+		</main>
+
+		<div class="boxDiv">This is a Box</div>
+
+		<button
+			class="btn"
+			id="btn-both">
+			Click me!
+		</button>
+		<br /><br />
+		<button
+			class="btndbl"
+			id="btn-both">
+			Click me 2 times!
+		</button>
+		<script>
+			let divBox = document.querySelector(".boxDiv");
+
+			divBox.onmouseover = (evt) => {
+				console.log("Mouse Pointer under Div");
+				console.log(evt);
+				console.log(evt.type);
+				console.log(evt.target);
+				console.log(evt.clientX, evt.clientY);
+			};
+			divBox.onmouseout = () => {
+				console.log("Mouse is out");
+			};
+
+			let btn = document.querySelector(".btn");
+
+			btn.onclick = () => {
+				console.log("button is clicked");
+				alert("Hello form single click");
+			};
+
+			let btndbl = document.querySelector(".btndbl");
+
+			btndbl.ondblclick = () => {
+				console.log("button is clicked");
+				alert("Hello from double click");
+			};
+		</script>
+	</body>
+</html>
